@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple HTML Page</title>
+</head>
+
+<body>
+  <h1>Input Form</h1>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name">
+
+  <br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+  <br>
+
+  <button type="button" id="submitBtn">Submit</button>
+
+  <script>
+    // Access the button element
+    var submitBtn = document.getElementById('submitBtn');
+
+    // Add an event listener to the button
+    submitBtn.addEventListener('click', function () {
+      // Get the values from the input fields
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+
+      // Display the values in the console (you can modify this as per your requirement)
+      console.log('Name:', name);
+      console.log('Email:', email);
+
+      // You can also perform other actions with the input values here
+    });
+  </script>
+</body>
+
+</html>
